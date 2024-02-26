@@ -6,8 +6,6 @@
 
 使用[icqq](https://github.com/icqqjs/icqq) 登录，防止oicq可能出现的低版本问题
 
----
-
 项目仅供学习交流使用，严禁用于任何商业用途和非法行为
 
 ## 使用方法
@@ -57,53 +55,3 @@ pnpm install -P
 ```
 node app
 ```
-
-## 常见问题
-
-### puppeteer 相关问题
-
-linux环境，其他环境请自行探索
-
-```sh
-    puppeteer Chromium 启动中...
-    Error: Failed to launch the browser process!
-```
-
-1. 先检查node版本是否大于14 (不大于14请去升级版本)
-
-```sh
-    node -v
-```
-
-2. 如果大于14 则可能是缺失一些库 请安装这些 (点击代码块右上角直接复制,如果报错可以尝试 sudo)
-
-### 依赖库
-
-```sh
-    yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y
-```
-
-### 乱码字体解决办法（centos，安装不了请换源）
-
-```sh
-    yum groupinstall fonts -y
-```
-
-### centos7 监听事件错误 "CXXABI_1.3.8" not found 解决办法
-下载 [libstdc++.so.6.0.29.zip](https://baiyin1314.lanzouq.com/i8Nr21ig8hyf) 将 **解压缩后** 的文件放在/usr/lib64/中
-```
-cd /usr/lib64/
-sudo mv libstdc++.so.6 libstdc++.so.6.bak
-sudo ln -s libstdc++.so.6.0.29 libstdc++.so.6
-```
-
-
-## 致谢
-
-|                           Nickname                            | Contribution     |
-|:-------------------------------------------------------------:|------------------|
-|      [Yunzai v3.0](https://gitee.com/le-niao/Yunzai-Bot)      | 乐神的Yunzai-Bot V3 |
-| [GardenHamster](https://github.com/GardenHamster/GenshinPray) | 模拟抽卡背景素材来源       |
-|      [西风驿站](https://bbs.mihoyo.com/ys/collection/839181)      | 角色攻略图来源          |
-|     [米游社友人A](https://bbs.mihoyo.com/ys/collection/428421)     | 角色突破素材图来源        |
-| [icqq](https://github.com/icqqjs/icqq) | ICQQ             |
