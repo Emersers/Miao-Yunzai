@@ -6,7 +6,7 @@ ignore_self: true
 # 被风控时是否尝试用分片发送
 resend: false
 # 发送消息错误时是否通知主人
-sendmsg_error: false
+sendmsg_error: true
 # ffmpeg
 ffmpeg_path:
 ffprobe_path:
